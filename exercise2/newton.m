@@ -40,6 +40,7 @@ function x = newton(f,x0,tol)
 %
 %   Author:  
 %------------------------------+---------------------------------------+
+format long;
 h = 1;
 n = length(x0);
 x = x0;
