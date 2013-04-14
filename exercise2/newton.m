@@ -45,7 +45,7 @@ n = length(x0);
 x = x0;
 
 while abs(h) > tol
-    A = jacobi(f, x0);
+    A = jacobi(f, x);
     b = -f(x);
     h = A\b;
     x = x+h;
