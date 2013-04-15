@@ -41,11 +41,11 @@ function x = newton(f,x0,tol)
 %   Author:  
 %------------------------------+---------------------------------------+
 format long;
-h = 1;
+h = tol + 1;
 n = length(x0);
 x = x0;
 
-while abs(h) > tol
+while norm(h) > tol
     A = jacobi(f, x);
     b = -f(x);
     h = A\b;
