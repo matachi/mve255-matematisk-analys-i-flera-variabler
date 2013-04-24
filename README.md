@@ -86,7 +86,8 @@ Anyone has access to view the document and write comments in it.
 
 ### Part 1
 
-extremeFinder finds an extreme point close to [0;0]:
+[extremeFinder](exercise3/extremeFinder.m) finds an extreme point close to
+[0;0]:
 
     >> [p, e] = extremeFinder(@ex3funk1, [0;0], 10e-5)
     p =
