@@ -75,3 +75,35 @@ Other way to set x and y:
     >> x = linspace(-10,10);
     >> y = x;
 
+## Exercise 3
+
+### Part 1
+
+extremeFinder finds an extreme point close to [0;0]:
+
+    >> [p, e] = extremeFinder(@ex3funk1, [0;0], 10e-5)
+    p =
+       -0.4214
+        0.1330
+    e =
+        2.3243
+        8.9020
+
+p = Coordinate for the point, (-0.4214, 0.1330).  
+e = Eigenvalues for the Hessian matrix. Both are positive, meaning it's
+positive definite and it's a local minimum point.
+
+### Part 2
+
+    >> [p, e] = extremeFinder(@ex3funk2, [0;0;0], 10e-5)
+    p =
+        1.0000
+        2.0000
+             0
+    e =
+       -2.0000
+        2.0000
+        6.0000
+
+The Hessian is indefinite, because there are both positive and negative
+eigenvalues. Therefore it's a saddle point.
