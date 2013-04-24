@@ -77,6 +77,13 @@ Other way to set x and y:
 
 ## Exercise 3
 
+The PDF hand-in document:
+[exercise3/documentation.pdf](exercise3/documentation.pdf). This contains all
+found extreme points, eigenvalues and a bunch of images.  
+The [Google Docs version can be accessed
+here](https://docs.google.com/document/d/1TpmuT33LReuyjWPvGgq1A2E5tpHZDUubNsesFsPfhVM/edit).
+Anyone has access to view and write comments in the document.
+
 ### Part 1
 
 extremeFinder finds an extreme point close to [0;0]:
