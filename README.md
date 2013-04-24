@@ -82,7 +82,7 @@ The PDF hand-in document:
 found extreme points, eigenvalues and a bunch of images.  
 The [Google Docs version can be accessed
 here](https://docs.google.com/document/d/1TpmuT33LReuyjWPvGgq1A2E5tpHZDUubNsesFsPfhVM/edit).
-Anyone has access to view and write comments in the document.
+Anyone has access to view the document and write comments in it.
 
 ### Part 1
 
