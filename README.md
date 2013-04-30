@@ -143,3 +143,16 @@ Explanation: a(x) = The thermal conductivity coefficient. Half-way through the
 plate there is another material with 10 times higher thermal conductivity as
 the material to the left. So it will lead heat 10 times better and get 1/10th
 as hot.
+
+### Problem 4
+
+[Analogy between thermal conductivity and
+mechanic](http://www.math.chalmers.se/Math/Grundutb/CTH/mve255/1213/lectures/fem1.pdf#page=6&zoom=133,0,616)
+(In Firefox the link will go to the correct page and position):  
+a ↔ EA  
+j ↔ N  
+g ↔ P  
+f ↔ KxA
+
+    [U, A, b] = MyPoissonSolver(p, t, e, @EqData4, @BdryData4);
+    plot(p,U)
