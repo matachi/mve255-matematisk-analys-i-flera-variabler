@@ -115,3 +115,31 @@ positive definite and it's a local minimum point.
 
 The Hessian is indefinite, because there are both positive and negative
 eigenvalues. Therefore it's a saddle point.
+
+## Exercise 4
+
+### FEM1 1.4
+
+    n=101;
+    p=linspace(0,1,n);
+    t=[1:n-1; 2:n; ones(1,n-1)];
+    e=[1 n; 1 2];
+    [U, A, b] = MyPoissonSolver(p, t, e, @EqData14, @BdryData14);
+    U2 = p./2.*(1.-p); % real solution
+    plot(p,U,p,U2)
+
+### FEM1 1.5
+
+    [U, A, b] = MyPoissonSolver(p, t, e, @EqData15, @BdryData15);
+    U2 = -p.^2./2 + p + 1; % real solution
+    plot(p,U,p,U2)
+
+### Problem 3
+
+    [U, A, b] = MyPoissonSolver(p, t, e, @EqData3, @BdryData3);
+    plot(p,U)
+
+Explanation: a(x) = The thermal conductivity coefficient. Half-way through the
+plate there is another material with 10 times higher thermal conductivity as
+the material to the left. So it will lead heat 10 times better and get 1/10th
+as hot.
