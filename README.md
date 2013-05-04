@@ -191,7 +191,7 @@ Radius as a parameter:
     dL=U(end) % the extension of the rod
     plot(p,U)
 
-Plot a table with the two columns *radius of rod* and *extension*.
+Plot a table with the two columns *radius of rod* and *extension*:
 
     P=10;   % N
     BdryData=@(x,tag)BdryDataStang12(x,tag,P);
