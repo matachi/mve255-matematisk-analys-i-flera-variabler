@@ -172,3 +172,41 @@ f ↔ KxA
     [U,A,b]=MyPoissonSolver(p,t,e,@EqDataStang11, @BdryDataStang11);
     plot(p,U)
     dL=U(end) % the extension of the rod
+
+#### [Example 2](http://www.math.chalmers.se/Math/Grundutb/CTH/mve255/1213/lectures/fem1-intro.pdf#page=2&zoom=133,0,85)
+
+Radius as a parameter:
+
+    L=1;    % the length of the rod
+    n=101;  % the number of points, n-1 is the number of intervals
+    p=linspace(0,L,n);
+    t=[1:n-1; 2:n; ones(1,n-1)];
+    e=[1 n; 1 2];
+
+    P=10;   % N force
+    r=0.01; % m radius
+    EqData=@(x,tag) EqDataStang12(x,tag,r);
+    BdryData=@(x,tag) BdryDataStang12(x,tag,P);
+    [U,A,b]=MyPoissonSolver(p,t,e,EqData,BdryData);
+    dL=U(end) % the extension of the rod
+    plot(p,U)
+
+Plot a table with the two columns *radius of rod* and *extension*.
+
+    P=10;   % N
+    BdryData=@(x,tag)BdryDataStang12(x,tag,P);
+    rr=[]; dL=[];
+    for r=0.01:.001:0.03
+        EqData=@(x,tag)EqDataStang12(x,tag,r);
+        [U,A,b]=MyPoissonSolver(p,t,e,EqData,BdryData);
+        dL=[dL;U(end)];     % save the extension in a column matrix
+        rr=[rr;r];          % save the radius in a column matrix
+    end
+    [rr,dL]                 % display a table
+
+If we want the rod to extend 0.001 units, we can use the function
+[strangfunk](exercise4/strangfunk.m) and solve it using
+[newton](exercise2/newton.m) to get the most optimal radius of the rod:
+
+    R=newton(@stangfunk,.01,1e-6)
+
