@@ -169,6 +169,6 @@ f ↔ KxA
     p=linspace(0,L,n);
     t=[1:n-1; 2:n; ones(1,n-1)];
     e=[1 n; 1 2];
-    [U,A,b]=MyPoissonSolver(p,t,e,@EqDataStang11, @BdryDataStang1);
+    [U,A,b]=MyPoissonSolver(p,t,e,@EqDataStang11, @BdryDataStang11);
     plot(p,U)
     dL=U(end) % the extension of the rod
