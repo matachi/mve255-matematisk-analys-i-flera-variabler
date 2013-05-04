@@ -156,3 +156,20 @@ f ↔ KxA
 
     [U, A, b] = MyPoissonSolver(p, t, e, @EqData4, @BdryData4);
     plot(p,U)
+
+### FEM1 Intro - Stången/The Rod
+
+[Stången: Introduktion till MyPoisson och Dugga
+2](http://www.math.chalmers.se/Math/Grundutb/CTH/mve255/1213/lectures/fem1-intro.pdf)
+
+#### [Example
+1](http://www.math.chalmers.se/Math/Grundutb/CTH/mve255/1213/lectures/fem1-intro.pdf#page=1&zoom=133,0,145)
+
+    L=1;    % the length of the rod
+    n=101;  % the number of points, n-1 is the number of intervals
+    p=linspace(0,L,n);
+    t=[1:n-1; 2:n; ones(1,n-1)];
+    e=[1 n; 1 2];
+    [U,A,b]=MyPoissonSolver(p,t,e,@EqDataStang11, @BdryDataStang1);
+    plot(p,U)
+    dL=U(end) % the extension of the rod
