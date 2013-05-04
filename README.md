@@ -205,7 +205,7 @@ Plot a table with the two columns *radius of rod* and *extension*.
     [rr,dL]                 % display a table
 
 If we want the rod to extend 0.001 units, we can use the function
-[strangfunk](exercise4/strangfunk.m) and solve it using
+[stangfunk](exercise4/stangfunk.m) and solve it using
 [newton](exercise2/newton.m) to get the most optimal radius of the rod:
 
     R=newton(@stangfunk,.01,1e-6)
