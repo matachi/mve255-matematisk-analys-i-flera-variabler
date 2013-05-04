@@ -162,8 +162,7 @@ f ↔ KxA
 [Stången: Introduktion till MyPoisson och Dugga
 2](http://www.math.chalmers.se/Math/Grundutb/CTH/mve255/1213/lectures/fem1-intro.pdf)
 
-#### [Example
-1](http://www.math.chalmers.se/Math/Grundutb/CTH/mve255/1213/lectures/fem1-intro.pdf#page=1&zoom=133,0,145)
+#### [Example 1](http://www.math.chalmers.se/Math/Grundutb/CTH/mve255/1213/lectures/fem1-intro.pdf#page=1&zoom=133,0,145)
 
     L=1;    % the length of the rod
     n=101;  % the number of points, n-1 is the number of intervals
