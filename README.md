@@ -28,9 +28,9 @@ Daniel Jonsson, IT, Chalmers
        -1.0000
        -2.0000
 
-### Dugga 1
+## Dugga 1
 
-#### Question 1
+### Question 1
 
     >> jacobi(@funk3, [1;2;3])
 
@@ -39,7 +39,7 @@ Daniel Jonsson, IT, Chalmers
         0.7539    2.2617    1.5078
         1.6765    0.8382    0.5588
 
-#### Question 4
+### Question 4
 
     >> newton(@funk4, [-1;-1;-5], 10^-6)
 
@@ -57,7 +57,7 @@ Daniel Jonsson, IT, Chalmers
         1.0000
         1.0000
 
-#### Question 5
+### Question 5
 
 Plot `f(x,y) = (2x + y - 3)^2 + (x*y - 1)^2` in Matlab:
 
