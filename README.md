@@ -217,7 +217,7 @@ If we want the rod to extend 0.001 units, we can use the function
 Determine the second degree taylor series to the function `(x^2 - y - 1)^(9/4)`
 around the coordinate (-1, -1).
 
-Calculate the partial derivates using using Mathematica:
+Calculate the partial derivates with Mathematica:
 
     Clear[f];
     f[x_, y_] := ((x^2 - y - 1)^(9/4));
