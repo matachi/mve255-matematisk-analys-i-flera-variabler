@@ -210,3 +210,19 @@ If we want the rod to extend 0.001 units, we can use the function
 
     R=newton(@stangfunk,.01,1e-6)
 
+## Dugga 2
+
+### Question 5
+
+Determine the second degree taylor series to the function `(x^2 - y - 1)^(9/4)`
+around the coordinate (-1, -1).
+
+Calculate the partial derivates using using Mathematica:
+
+    Clear[f];
+    f[x_, y_] := ((x^2 - y - 1)^(9/4));
+    D[D[f[x, y], y], y] /. x -> -1 /. y -> -1
+    D[f[x, y], x] /. x -> -1 /. y -> -1
+
+Answer: `1 - 9/2*(x+1) - 9/4*(y+1) + 63/8*(x+1)^2 + 45/8*(x+1)(y+1) +
+45/32*(y+1)^2`
