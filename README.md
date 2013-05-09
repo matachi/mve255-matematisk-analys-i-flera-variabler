@@ -226,3 +226,24 @@ Calculate the partial derivates with Mathematica:
 
 Answer: `1 - 9/2*(x+1) - 9/4*(y+1) + 63/8*(x+1)^2 + 45/8*(x+1)(y+1) +
 45/32*(y+1)^2`
+
+### Question 10
+
+The rode is bolted in its left edge and free in its right.  
+Radius: `r(x) = R(1 + h*x/L * (1 - x/L))`  
+L = 1 m  
+E = 1e7 N/m^2  
+P = 10 N  
+R = 0.01 m  
+n = 101 node points
+
+Value of *h* that gives U(L) = 1 mm?
+
+*h* can be calculated using the file
+[stangfunkD2Q10.m](dugga2/stangfunkD2Q10.m) in the following way:
+
+    >> R=newton(@stangfunkD2Q10, 2, 1e-6)
+    R =
+        5.8038
+
+Answer: `5.8`
