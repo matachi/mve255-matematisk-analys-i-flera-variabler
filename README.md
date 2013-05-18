@@ -247,3 +247,11 @@ Value of *h* that gives U(L) = 1 mm?
         5.8038
 
 Answer: `5.8`
+
+## Exercise 5
+
+Start PDE Toolbox in Matlab with `pdetool` and open [pde.m](exercise5/pde.m).
+The documentation/hand-in/description can be read in
+[documentation.pdf](exercise5/documentation.pdf) or on [Google
+Drive](https://docs.google.com/document/d/1WQ13IPAUOE0-u1z9ZhJew6XymgLF37KINN0MEnMR0C0/edit?usp=sharing)
+where it's also possible for anybody to leave comments.
